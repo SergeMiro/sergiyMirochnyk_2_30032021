@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: 'Raleway-Medium';
     src: url(../fonts/Raleway-Medium.ttf) format('truetype');
@@ -46,38 +48,46 @@ strong {
     font-family: 'Raleway-ExtraBold', sans-serif;
 }
 
-/*HEAD*/
+/*HEAD - la tête de notre page*/
 
 .header {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto 1fr auto auto;
     grid-template-columns: auto 1fr auto auto;
-    text-align: center;
-    padding-bottom: 20px;
-    width: 90%;
-    margin: auto;
+    text-align: left;
+    padding-bottom: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
 }
 
 .headLogo {
-    width: 100px;
-    margin-top: 15px;
-    margin-bottom: 0;
+    width: 120px !important;
+    height: 100%;
     cursor: pointer;
+    margin-left: 48px;
+    margin-top: 5px;
+
 }
 
+
+
+
+
 .headNav {
-    padding-top: 27px;
-    margin-top: 15px;
-    padding-left: 50px;
-    font-size: 1.1em;
+    margin-top: 50px;
+    margin-right: 48px;
+    margin-bottom: 70px;
+    margin-left: 0px;
+    font-size: 1em;
     -ms-grid-column: 3;
     grid-column: 3;
 }
 
 .headNavLink1 {
     border-top: solid 4px;
-    padding-top: 39px;
+    padding-top: 40px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -85,8 +95,8 @@ strong {
 .header .headNavLink2 {
     text-decoration: none;
     padding-top: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
     color: #000;
     border-top: solid 4px transparent;
     -webkit-transition: 0.3s;
@@ -100,10 +110,10 @@ strong {
     color: #0065FC;
 }
 
-.header .headSignup {
-    padding-top: 43px;
-    padding-left: 15px;
-    padding-right: 15px;
+.header .headSignup {  
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;  
     -ms-grid-column: 4;
     grid-column: 4;
 }
@@ -118,16 +128,17 @@ strong {
 .title h1 {
     margin: 0;
     font-family: 'Raleway-ExtraBold', sans-serif;
-    font-size: 1.4em;
+    font-size: 1.5em;
+    padding-bottom: 5px;
 }
 
 .title h2 {
     margin-top: 7px;
     font-family: 'Raleway-Light', sans-serif;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
-/*FORMULAIRE*/
+/*FORMULAIRE de RECHERCHE*/
 
 .search_form {
     display: -webkit-box;
@@ -138,7 +149,10 @@ strong {
     -ms-flex-align: center;
     -webkit-align-items: center;
             align-items: center;
-    max-width: 450px;
+    width: 500px;
+    max-width: 500px;
+    height: 45px;
+    max-height: 45px;
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 45px;
@@ -152,6 +166,7 @@ strong {
     -webkit-border-bottom-left-radius: 17px;
             border-bottom-left-radius: 17px;
     cursor: pointer;
+    margin: 0px;
 }
 
 .search_form .marker:hover img {
@@ -176,10 +191,10 @@ strong {
 .search_form .place input {
     position: relative;
     border: solid #F2F2F2 2px;
-    height: 44px;
+    width: 200px;
+    height: 45px;
     padding-left: 15px;
     padding-right: 45px;
-    width: 150px;
     outline: 0;
 }
 
@@ -351,7 +366,6 @@ button .submit__submitTxt {
     font-size: 0.8em;
     margin-left: 5px;
 }
-
 
 /*MAIN*/
 
@@ -844,7 +858,7 @@ button .submit__submitTxt {
         margin-bottom: 30px;
     }
 
-    /*FORMULAIRE de Recherche*/
+    /*FORMULAIRE*/
 
     .search_form {
         width: 85%;
@@ -1079,5 +1093,3 @@ button .submit__submitTxt {
         height: 30%;
         line-height: 1.3em;
     }
-
-}
