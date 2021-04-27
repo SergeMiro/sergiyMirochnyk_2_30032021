@@ -22,8 +22,7 @@
 
 strong {
     font-weight: bold;
-
-}
+    }
 
 .link h5,
 .cards h5,
@@ -33,14 +32,14 @@ strong {
     font-family: 'Raleway-bold', sans-serif;
     font-size: 1.1em;
 }
-
+    
 .headNav,
 .headNavLink1,
 .search_form .place input {
     font-family: 'Raleway-Medium', sans-serif;
     font-size: 1.15em;
 }
-
+    
 .activity h3,
 .housingTitle,
 .pop .popTitle {
@@ -49,7 +48,6 @@ strong {
 }
 
 /*HEAD - la tête de notre page*/
-
 .header {
     display: -ms-grid;
     display: grid;
@@ -72,9 +70,6 @@ strong {
 }
 
 
-
-
-
 .headNav {
     margin-top: 50px;
     margin-right: 48px;
@@ -86,6 +81,8 @@ strong {
 }
 
 .headNavLink1 {
+    color: black;
+    font-size: 1.15em;
     border-top: solid 4px;
     padding-top: 40px;
     padding-left: 30px;
@@ -109,6 +106,7 @@ strong {
     padding-top: 40px;
     color: #0065FC;
 }
+
 
 .header .headSignup {  
     padding-top: 40px;
@@ -138,7 +136,7 @@ strong {
     font-size: 1.1em;
 }
 
-/*FORMULAIRE de RECHERCHE*/
+/*FORME de RECHERCHE*/
 
 .search_form {
     display: -webkit-box;
@@ -149,10 +147,10 @@ strong {
     -ms-flex-align: center;
     -webkit-align-items: center;
             align-items: center;
-    width: 500px;
-    max-width: 500px;
-    height: 45px;
-    max-height: 45px;
+    width: 300px;
+    max-width: 300px;
+    height: 43px;
+    max-height: 43px;
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 45px;
@@ -160,13 +158,13 @@ strong {
 
 .search_form .marker {
     width: 55px;
-    height: 50px;
+    height: 43px;
+    max-height: 43px;
     -webkit-border-top-left-radius: 17px;
             border-top-left-radius: 17px;
     -webkit-border-bottom-left-radius: 17px;
             border-bottom-left-radius: 17px;
     cursor: pointer;
-    margin: 0px;
 }
 
 .search_form .marker:hover img {
@@ -180,9 +178,10 @@ strong {
 
 .marker img {
     width: 15px;
-    margin-left: 20px;
-    margin-right: 14px;
-    margin-top: 15px;
+    margin-top: 12px;
+    margin-right: auto;
+    margin-left: 22px;
+    margin-bottom: auto;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -190,13 +189,23 @@ strong {
 
 .search_form .place input {
     position: relative;
-    border: solid #F2F2F2 2px;
-    width: 200px;
-    height: 45px;
+    border: solid #F2F2F2 2px;;
+    width: 150px;
+    height: 38px;
+    max-height: 38px;
     padding-left: 15px;
-    padding-right: 45px;
+    padding-right: 50px;
     outline: 0;
 }
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: 'Raleway-bold', sans-serif;
+    font-size: 1em;
+    color: rgba(15, 14, 14, 0.89);
+    opacity: 1; /* Firefox */
+  }
+  
 
 .search_form .submit {
     position: absolute;
@@ -208,7 +217,8 @@ strong {
     -webkit-border-bottom-right-radius: 17px;
             border-bottom-right-radius: 17px;
     padding-bottom: 15px;
-    height: 50px;
+    height: 43px;
+    max-height: 43px;
     width: 125px;
     margin-left: 245px;
     opacity: 1;
@@ -281,26 +291,25 @@ button .submit__submitTxt {
     -webkit-align-items: center;
             align-items: center;
     text-decoration: none;
-    height: 50px;
+    height: 40px;
     padding-right: 15px;
     margin-right: 10px;
-    -webkit-box-shadow: inset 5px -5px 5px 1px #dfdfdf;
-    box-shadow: inset 5px -5px 5px 1px #dfdfdf;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+
 }
 
 .filter .choice img {
     width: auto;
-    height: 17px;
-    margin-top: 16px;
+    height: 18px;
+    margin-top: 12px;
     color: #000;
 }
 
 .filter .choice .img {
-    width: 50px;
-    height: 50px;
+    width: 41px;
+    height: 41px;
     -webkit-border-radius: 50%;
             border-radius: 50%;
     text-align: center;
@@ -332,11 +341,12 @@ button .submit__submitTxt {
 }
 
 .choice:hover {
-    -webkit-box-shadow: inset -5px 5px 5px 1px #dfdfdf;
-    box-shadow: inset -5px 5px 5px 1px #dfdfdf;
+    background-color: #0065FC; 
+    color: white;
 }
 
-/*SECTION N°3*/
+
+/*SECTION N°3 */
 
 .info {
     display: -webkit-box;
@@ -366,6 +376,7 @@ button .submit__submitTxt {
     font-size: 0.8em;
     margin-left: 5px;
 }
+
 
 /*MAIN*/
 
@@ -526,13 +537,14 @@ button .submit__submitTxt {
             justify-content: space-around;
     width: 90%;
     margin: auto;
-    margin-top: 15px;
-    margin-bottom: 0;
-    padding-top: 30px;
+    margin-top: 55px;
+    margin-bottom: -3px;
+    margin-left: -22px;
 }
 
 .pop .popTitle img {
     width: 25px;
+    margin-right: -83px;
 }
 
 .element a {
@@ -540,10 +552,12 @@ button .submit__submitTxt {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    width: 75%;
+    width: 80%;
     min-width: 293px;
-    height: 125px;
+    height: 138px;
     margin: auto;
+    margin-top: 18px;
+    margin-bottom: 13px;
     text-decoration: none;
     color: #000;
 }
@@ -1093,3 +1107,20 @@ button .submit__submitTxt {
         height: 30%;
         line-height: 1.3em;
     }
+}
+
+
+
+@media screen and (max-width: 7000px) { /*30% browser*/
+
+} 
+
+
+@media screen and (max-width: 3391.32px) { /*40% browser*/
+
+} 
+
+
+@media screen and (max-width: 2925.9px) { /*40% browser*/
+
+} 
