@@ -19,26 +19,34 @@
     </nav>
     <a class="headerSignup" href="index.html#">S'inscrire</a>
   </header>
-  <!-- HEADER -->
+
 
   <!-- MAIN - le corps de notre site-->
   <main class="main">
-    <!-- FORME DE RECHERCHE -->
     <section class="search">
       <header class="searchHeader">
         <h1 class="searchHeaderTitle">Trouvez votre hébergement pour des vacances de rêve</h1>
         <p class="searchHeaderSubtitle">En plein centre de ville ou en pleine nature</p>
       </header>
-      <form class="searchForm" action="https://reservia.mathisbarre.com/proceedFrom.html" method="GET">
-        <span class="searchFormWrapicon">
-          <i class="fas fa-map-marker-alt searchFormWrapiconIcon"></i>
-        </span>
-        <input class="searchFormSearchinput" type="search" placeholder="Marseille, France" size="1">
-        <button class="searchFormSubmitinput">
-          <span class="searchFormSubmitinputText">Rechercher</span>
-          <i class="searchFormSubmitinputIcon fas fa-search"></i>
+
+       <!--------------------------------------------------->
+
+          <!-- FORMULAIRE de RECHERCHE -->
+    <form method="get
+    " action="./" class="search_form">
+        <label for="search" class="marker">
+            <img src="img/logo/map-marker-alt-solid.svg" alt="marker">
+        </label>
+        <div class="place">
+            <input type="text" name="search" id="search" placeholder="Marseille, France">
+        </div>
+        <button type="submit" class="submit">
+            <span class="submit__submitTxt">Rechercher</span>
+            <img src="img/logo/search-solid.svg" class="searchLogo" alt="logo loupe">
         </button>
-      </form>
+    </form>
+       <!--------------------------------------------------->
+
 
       <!-- LES FILTRES -->
       <div class="searchFilters">
@@ -73,9 +81,9 @@
         <p class="searchResultText">Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
     </section>
-    <!-- SEARCH -->
+    
 
-    <!-- HOSTING -->
+    <!-- HOSTING - LES CARDS "d'HEBERGEMENT à MARSEILLE" -->
     <section class="hosting" id="hosting">
       <div class="hostingMain">
         <header class="hostingMainHeader">
