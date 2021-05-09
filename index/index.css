@@ -566,13 +566,56 @@ button .submit__submitTxt {      /*-------------bouton "RECHERCHER" à changer s
     width: 119%;
     margin-left: -33px;
   }
-  .hostingPopular {
-  border-radius: 0.1rem;
+
+  .hostingPopularTitle {
+    margin-bottom: 23px;
   }
+  .hostingPopular {
+   border-radius: 0.1rem;
+   column-gap: 1.3rem;
+   row-gap: 1.3rem;
+   padding-top: -25px;
+  }
+
+
+
+
   .hostingMain {
     border-radius: 0.1rem;
     background: #ffffff;
+    column-gap: 1.65rem;
+    row-gap: 1.65rem;
+    margin-top: -27px;
   }
+  
+  .hostingMainHeaderTitle {
+    margin-bottom: 21px;
+    line-height: 0.8;
+  }
+  .hostingMainCard{
+    height: 107%;
+  }
+
+  .hostingMainViewmore {
+    font-weight: bold;
+    margin-top: 30px;
+  }
+
+
+
+
+  .activityCard {
+    column-gap: 0.75rem;
+    row-gap: 0.75rem;
+    margin-bottom: -10px;
+  }
+
+  .activityTitle {
+    margin-top: -37px;
+    line-height: 0.5;
+   
+  }
+
 }
 
 
