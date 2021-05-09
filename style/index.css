@@ -18,7 +18,7 @@ a {
 .headerImg {
   grid-area: logo;
   padding: 0 2rem;
-  height: 2.813rem;
+  height: 4rem;
 }
 .headerNav {
   display: flex;
@@ -45,7 +45,8 @@ a {
   grid-area: button;
   padding: 2rem;
   color: #0065FC;
-  font-weight: 600;
+  padding-right: 43px;
+  font-weight: bolder;
 }
 
                                                                 @media screen and (min-width: 601px) {
@@ -53,6 +54,7 @@ a {
     grid-template-columns: auto 1fr auto auto;
     grid-template-areas: "logo . navbar button";
   }
+
   .headerNavLink[data-active=true] {
     border-top: 3px solid #0065FC;
   }
@@ -65,16 +67,24 @@ a {
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "logo . button" "navbar navbar navbar";
   }
-  .headerimg {
+
+
+
+  .headerImg {
     order: 0;
+    grid-area: logo;
+    padding: 0 2rem;
+    height: 2.9rem;
   }
   .headerSignup {
     order: 1;
+    padding-bottom: 23px;
   }
   .headerNav {
     order: 2;
   }
   .headerNavLink {
+    padding-left: 25px;
     border-top: none;
     border-bottom: 3px solid #F2F2F2;
     width: 50%;
@@ -167,10 +177,18 @@ a {
 }
 
 
-  input::placeholder {
+::placeholder {
   color: rgb(0, 0, 0);
+  opacity: 1; /* Firefox */
 }
 
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: rgb(0, 0, 0);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: rgb(0, 0, 0);
+}
 
   .submit {
   font-weight: bolder; 
@@ -224,11 +242,6 @@ button .submit__submitTxt {      /*-------------bouton "RECHERCHER" à changer s
 
 /*la FIN de FORMULAIRE de RECHERCHE----------------------------------------------------------*/
 
-
-
-.placeholder {
-color: black;
-}
 
 
 .searchFilters {
@@ -326,6 +339,8 @@ color: black;
     width: 185px;
   }
       
+
+
   .submit {
   font-weight: bolder; 
   border: none;
@@ -541,6 +556,30 @@ color: black;
 }
 
 
+
+
+                                                              @media screen and (max-width: 600px) {
+  .hosting {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 6fr 3fr;
+    width: 119%;
+    margin-left: -33px;
+  }
+  .hostingPopular {
+  border-radius: 0.1rem;
+  }
+  .hostingMain {
+    border-radius: 0.1rem;
+    background: #ffffff;
+  }
+}
+
+
+
+
+
+
                                                                 @media (max-width: 1440px) {
   .hosting {
     grid-template-columns: 1fr;
@@ -716,7 +755,4 @@ color: black;
     margin-bottom: 0;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
-
 
