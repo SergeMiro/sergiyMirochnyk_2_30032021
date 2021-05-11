@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
 body {
   font-family: "Raleway", "Sans serif";
   margin: 0;
 }
+
 
 a{
   color: inherit;
@@ -49,10 +50,6 @@ a{
 }
 
                                                                 @media screen and (min-width: 601px) {
-                                                                  body {
-                                                                    font-family: "Raleway", "Sans serif";
-                                                                    margin: 0;
-                                                                  }
   .header {
     grid-template-columns: auto 1fr auto auto;
     grid-template-areas: "logo . navbar button";
@@ -66,10 +63,6 @@ a{
   }
 }
                                                                 @media screen and (max-width: 600px) {
-                                                                  body {
-                                                                    font-family: "Raleway", "Sans serif";
-                                                                    margin: 0;
-                                                                  }
   .header {
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "logo . button" "navbar navbar navbar";
@@ -324,10 +317,6 @@ button .submit__submitTxt {      /*-------------bouton "RECHERCHER" à changer s
 }
 
                                                           @media screen and (max-width: 600px) {
-                                                            body {
-                                                              font-family: "Raleway", "Sans serif";
-                                                              margin: 0;
-                                                            }
                                                                                                         
   .search_form {
     display: -webkit-box;
@@ -391,10 +380,6 @@ button .submit__submitTxt {      /*-------------bouton "RECHERCHER" à changer s
   }
 }
                                                           @media screen and (max-width: 650px) {
-                                                            body {
-                                                              font-family: "Raleway", "Sans serif";
-                                                              margin: 0;
-                                                            }
 
 
   .search_form {
@@ -453,13 +438,8 @@ button .submit__submitTxt {      /*-------------bouton "RECHERCHER" à changer s
 
 }
                                                           @media screen and (min-width: 601px) {
-                                                            body {
-                                                              font-family: "Raleway", "Sans serif";
-                                                              margin: 0;
-                                                            }
   .searchFormSubmitinputText {
     display: block;
-    font-family: "Raleway", "Sans serif";
   }
   .searchFormSubmitinputIcon {
     display: none !important;
@@ -579,10 +559,6 @@ button .submit__submitTxt {      /*-------------bouton "RECHERCHER" à changer s
 
 
                                                               @media screen and (max-width: 600px) {
-                                                                body {
-                                                                  font-family: "Raleway", "Sans serif";
-                                                                  margin: 0;
-                                                                }
   .hosting {
     display: grid;
     column-gap: 2rem;
@@ -647,10 +623,7 @@ button .submit__submitTxt {      /*-------------bouton "RECHERCHER" à changer s
 
 
 
-                                                                @media (max-width: 1440px) {body {
-                                                                  font-family: "Raleway", "Sans serif";
-                                                                  margin: 0;
-                                                                }
+                                                                @media (max-width: 1440px) {
   .hosting {
     grid-template-columns: 1fr;
     row-gap: 2rem;
@@ -667,40 +640,24 @@ button .submit__submitTxt {      /*-------------bouton "RECHERCHER" à changer s
 }
 
                                                                   @media (min-width: 925px) {
-                                                                    body {
-                                                                      font-family: "Raleway", "Sans serif";
-                                                                      margin: 0;
-                                                                    }
   .hostingMain {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
                                                                   @media (max-width: 925px) and (min-width: 650px) {
-                                                                    body {
-                                                                      font-family: "Raleway", "Sans serif";
-                                                                      margin: 0;
-                                                                    }
   .hostingMain {
     grid-template-columns: 1fr 1fr;
   }
 }
 
                                                                   @media (max-width: 650px) {
-                                                                    body {
-                                                                      font-family: "Raleway", "Sans serif";
-                                                                      margin: 0;
-                                                                    }
   .hostingMain {
     grid-template-columns: 1fr;
   }
 }
 
                                                                   @media (max-width: 1000px) {
-                                                                    body {
-                                                                      font-family: "Raleway", "Sans serif";
-                                                                      margin: 0;
-                                                                    }
   .hostingPopular {
     grid-template-columns: 1fr;
     grid-template-rows: auto repeat(3, 9rem);
@@ -740,10 +697,6 @@ button .submit__submitTxt {      /*-------------bouton "RECHERCHER" à changer s
 }
 
                                                                     @media (min-width: 1100px) {
-                                                                      body {
-                                                                        font-family: "Raleway", "Sans serif";
-                                                                        margin: 0;
-                                                                      }
   .activity {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
@@ -775,10 +728,6 @@ button .submit__submitTxt {      /*-------------bouton "RECHERCHER" à changer s
 }
 
                                                                   @media (max-width: 1100px) {
-                                                                    body {
-                                                                      font-family: "Raleway", "Sans serif";
-                                                                      margin: 0;
-                                                                    }
   .activity {
     row-gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
@@ -787,10 +736,6 @@ button .submit__submitTxt {      /*-------------bouton "RECHERCHER" à changer s
 }
 
                                                                   @media (max-width: 925px) {
-                                                                    body {
-                                                                      font-family: "Raleway", "Sans serif";
-                                                                      margin: 0;
-                                                                    }
   .activity {
     row-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
@@ -799,10 +744,6 @@ button .submit__submitTxt {      /*-------------bouton "RECHERCHER" à changer s
 }
 
                                                                   @media (max-width: 650px) {
-                                                                    body {
-                                                                      font-family: "Raleway", "Sans serif";
-                                                                      margin: 0;
-                                                                    }
   .activity {
     row-gap: 2rem;
     grid-template-columns: 1fr;
@@ -835,10 +776,6 @@ button .submit__submitTxt {      /*-------------bouton "RECHERCHER" à changer s
 }
 
                                                               @media (max-width: 750px) {
-                                                                body {
-                                                                  font-family: "Raleway", "Sans serif";
-                                                                  margin: 0;
-                                                                }
   .footerColumnwrapper {
     flex-direction: column;
     padding: 2rem;
